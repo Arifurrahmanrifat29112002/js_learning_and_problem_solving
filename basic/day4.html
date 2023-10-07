@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4 js</title>
+</head>
+<body>
+
+    <script>
+
+         /**
+         * class 18
+         * do while loop 
+         * example with do-while vs while loop
+         */  
+        
+         //do-while loop --- without check condition  1st time print data then check condition 
+            // var i= 11;
+            // do{
+            //     document.write("task "+i);
+            //     i++;
+            // }while(i<=10);//output:task 1
+
+         //do-while loop -- 1st time check condition then print data
+            // var i = 11;
+            // while(i<=10){
+            //     document.write("task"+i);
+            //     i++;
+            // }//output: blank
+
+         /**
+         * class 19
+         * breck key word and continue key word 
+         */ 
+         //break example
+            // for(var i= 0;i<=10;i++){
+            //     if (i==5) {
+            //         break;
+            //     }
+            //     document.write("Task "+i+"<br\>");
+            // }
+
+         //continue example
+            // var i=1;//start number 
+            // var sum = 0;
+            // while(i<=10){
+            //     i++;
+            //     if(i%2 != 0){
+            //         continue;
+            //     }
+            //     sum = sum + i;
+            // }
+            // document.write("sum "+sum);//output: sum 30--- 2 4 6 8 10 
+
+         /**
+         * class 20
+         * Ternary operator
+         * 1)if-else vs ternary operator 
+         * 2)if-else if-else vs ternary operator
+         * task-7->get three number print large number 
+         */ 
+
+         //1) if-else 
+            // var num = Number(prompt("Enter a number:"));
+            // if(num>0){
+            //     document.writeln("Positive")
+            // }else{
+            //     document.writeln("Negative")
+            // }
+
+         //1) ternary operator
+            // var num = Number(prompt("Enter a number:"));
+            // var result = num>0 ? "positive" : "Negitive";
+            // document.write(result);
+
+
+         //2) if-else if-else
+            // var num = Number(prompt("Enter a number:"));
+            // if(num>0){
+            //     document.write("Positive");
+            // }
+            // else if(num<0){
+            // document.write("Negative");
+            // }else{
+            //     document.write("Zero");
+            // }
+
+         //2) ternary operator
+            //  var num = Number(prompt("Enter a number:"));
+            //  var  result = num>0 ? "positive" : num<0 ? "Negative" : "zero";
+            //  document.write(result);
+        
+         //task-7 
+            // var num1 = Number(prompt("Enter 1st Number :"));
+            // var num2 = Number(prompt("Enter 2nd Number :"));
+            // var num3 = Number(prompt("Enter 3rd Number :"));
+
+            // var result = num1>num2 && num1>num3 ? "large Number"+num1 : num2>num1 && num2>num3 ? "large Number"+num2 : "large Number"+num3;
+            // document.write(result);
+
+
+            
+         /**
+         * class 21
+         * Traditional function 
+         * task-8->create calculator functon 
+         */ 
+
+         //traditional function
+            // function sum(a,b){
+            //     return a+b;
+            // }
+            // document.write(sum(10,20));
+
+         // task-8->create calculator functon 
+
+            //  //sum
+            //  function sum(a,b){
+            //      var result = a+b;
+            //      document.write("sum "+ result +"<br\>");
+            //  }
+            
+            //  //subtract
+            //  function subtract(a,b){
+            //      var result = a-b;
+            //      document.write("subtract "+ result +"<br\>");
+            //  }
+
+            //  //multiply
+            //  function multiply(a,b){
+            //      var result = a*b;
+            //      document.write("multiply "+ result +"<br\>");
+            //  }
+
+            //  //divide
+            //  function divide(a,b){
+            //     var result = a/b;
+            //      document.write("divide "+ result +"<br\>");
+            //  }
+
+            //  //modulation
+            //  function modulation(a,b){
+            //      var result = a%b;
+            //      document.write("modulation "+ result +"<br\>");
+            //  }
+
+            //  //call function 
+            //     sum(10,20);//a,b
+            //     subtract(10,20);
+            //     multiply(10,20);
+            //     divide(100,5);
+            //     modulation(100,1000);
+
+         /**
+         * class 22
+         * IIFEs ->Immediately Invokeble function Expressions 
+         * IIFEs example
+         * task-9->create  an IIFEs that print sum of 2 numbers
+         * function Expressions
+         */
+            // //IIFEs example-1
+            // (function display(){
+            //     document.write("hi <br\>");
+            // })();
+
+            // //IIFEs example-2
+            // (function print(message){
+            //     document.write(message);
+            // })("Arif");
+
+           //task-9->create  an IIFEs that print sum of 2 numbers
+           
+            // (function sum(a,b){
+            //     var sum = a+b;
+            //     document.write(`sum is ${sum}<br/>`);
+            // })(20,40);
+
+           //function Expressions
+            // var say = function somthing(message){
+            //         document.write(`${message} Arif`);
+            // }
+            // say("assalamu alaikum");
+            
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 5 js</title>
+</head>
+<body>
+    
+
+    <script>
+        /**
+         * class 23
+         * array -1 
+         * how to create and user array 
+         * Array is object collection of valuse
+        */
+           //array example-1
+            // var countary = ["Bangladesh","Napal"]; // or var country = new Array("Bangladesh","Napal");
+            
+            // console.log(countary.length);//get countary length
+
+            // countary.push("India");//push data in array in push function
+            // console.log(countary);
+
+            // countary.pop()//Remove last index data in array use pop function
+            // console.log(countary);
+
+        /**
+         * class 24
+         * array -2
+         * how to loop an array 
+        */
+          //array looping example -1
+            // var fruits = ['apple', 'banana', 'cherry'];
+            // for(i=0;i<fruits.length;i++){
+            //     document.write(fruits[i]+"<br\>");
+            // }
+
+          //get usser data store in array then looping print sum
+            // var num = [];//empty array
+            // var sum = 0;
+
+            //     for(var i=0;i<5; i++){
+            //         num[i] = parseFloat(prompt("Entar Number :"));
+            //         sum = sum + num[i];
+            //     }
+
+            //     for(var i=0;i<num.length;i++){
+            //         document.write(num[i]+"<br\>");
+            //     }
+
+            //     document.write("total =" +sum);
+            
+        
+        /**
+         * class 25
+         * array library function
+        */
+          //splice() 
+            // var student = ["arif","rifat","mohan"];
+            // student.splice(1,1,"a","b")
+            // document.write(student);//[ 'arif', 'a', 'b', 'mohan' ]
+
+          //slice() 
+            // var student = ["arif","rifat","mohan"];
+            // var newArray  = student.slice(1);//slice create new array then remove 1-> 1st value
+            // console.log(newArray);
+            // console.log(student);
+
+          //sort()
+            // var numbers = ["b","c","a","f"];
+            // console.log(numbers.sort());//[ 'a', 'b', 'c', 'f' ]
+
+          //how to use sort() function in Number 
+            // var number = [500,100,1,2,45,5,0];
+            // number.sort((a, b) => a-b); or
+
+            // number.sort(function(a, b){
+            //     return a - b;
+            // });
+            // console.log(number);
+
+          //reverse
+            // var char = [ 'a', 'b', 'c', 'f' ];
+            // console.log(char.reverse())//[ 'f', 'c', 'b', 'a' ]
+          
+
+
+        /**
+         * class 26
+         * one dimantional array
+         * Task-8
+         * create a function called highestScore that eill
+         *   .recive a 1D array called Scors
+         *   .return the highest Score
+        */
+
+         //one dimantional array 
+            // var Students = ['Arif','Rifat'];
+            // console.log(Students);//['Arif','Rifat']
+
+            /**
+            * Task-8
+            * create a function called highestScore that will
+            *   .recive a 1D array called Scors
+            *   .return the highest Score 
+            */
+
+                // var score = [500,800,1000,100,200,0,5000];
+
+                // function highestScore(score){
+
+                //     var score = score;
+
+                //     score.sort((a, b) => b-a);   
+
+                //     return score[0];
+
+                // }
+
+                // var max =  highestScore(score);
+
+                // console.log(max);
+        /**
+         * class 27
+         * 2D Array
+         * Task -9 
+         * create a function called highestRunScore that will
+         *   .Recive a 2D array called playersInfo  
+         *   .Based on highest score return the name of the player
+        */
+
+        //2D Array 
+
+            // var Students = [
+            //     ["Arif",12],
+            //     ["Rifat",34],
+            //     ["Mohasin",10],
+            //     ["Mohasin",15],
+            //     ["Mohasin",14],
+            // ];
+
+
+            // var arrayRow = Students.length;
+
+            // for(var row = 0; row<arrayRow; row++){
+            //     for(var col = 0; col<1;col++){
+            //         document.write('Student name '+Students[row][0] +' roll '+ Students[row][1] +'<br/>');
+            //     }
+            // }
+
+
+            //Task-9
+                // var players = [
+                //     ["Arif",12],
+                //     ["Rifat",34],
+                //     ["Mohasin",10],
+                //     ["Mohasin",15],
+                //     ["Mohasin",14],
+                // ];
+
+                // function highestRunScore(players){
+                //     var playersInfo = players;
+                
+                //     var highestRunScorer = playersInfo[0][0];
+                //     var highestScore = playersInfo[0][1];
+                    
+                    
+                //     for(var i=1; i<playersInfo.length; i++){
+
+                //         if(highestScore<playersInfo[i][1]){
+
+                //             highestScore = playersInfo[i][1];
+                //             highestRunScorer = playersInfo[i][0]
+                            
+                //         }
+
+                //     }
+                //     return "The Highest Run Scorer is "+highestRunScorer+" with a score of:  "+highestScore ;
+                
+                
+                // }
+
+                // var display =  highestRunScore(players);
+                // console.log("Display : ",display)
+
+
+
+    </script>
+</body>
+</html>

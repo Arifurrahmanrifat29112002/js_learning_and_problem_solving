@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3 js</title>
+</head>
+<body>
+    
+
+    <script>
+        /**
+         * class 12
+         * if,elseif,else
+         * odd/even programe
+         * positive negitive programe
+         * 
+         * task-4 create marks genaretor for example [(80-100 = A+)]
+         * 
+         */ 
+
+         //if,elseif,else
+            // var numOne = parseInt(prompt("enter a number"));
+            // if (numOne%2 == 0)
+            //     document.write("you enter even number");
+            // else
+            //     document.write("you enter odd number");
+         
+
+         //positive negitive programe 
+            // var num = parseFloat(prompt('enter a number :'));
+            // if(num>0)
+            // document.write(num +"it's positive number");
+            // else
+            // document.write(num +"it's negitive number");
+         
+        //task-4 create marks genaretor for example [(80-10 = A+)]
+            // var marks = parseFloat(prompt('Enter your subject marks :'));
+            // if(marks >= 80 && marks <= 100)
+            //   document.write(marks + " Letter Grade " + " A+ " + " Grade Point " +"5");
+            // else if(marks >= 70 && marks <= 79)
+            //   document.write(marks + " Letter Grade " + " A " + " Grade Point" +"4");
+            // else if(marks >= 60 && marks <= 69)
+            //   document.write(marks + " Letter Grade " + " A- " + " Grade Point " +"3.5");
+            // else if(marks >= 50 && marks <= 59)
+            //   document.write(marks + " Letter Grade " + " B " + " Grade Point " +"3");
+            // else if(marks >= 40 && marks <= 49)
+            //   document.write(marks + " Letter Grade " + " C " + " Grade Point " +"2");
+            // else if(marks >= 33 && marks <= 39)
+            //   document.write(marks + " Letter Grade " + " D " + " Grade Point " +"1");
+            // else
+            //   document.write(marks + " Letter Grade " + " F " + " Grade Point " +"0");
+     
+         /**
+         * class 13
+         * logical oprators
+         * 
+         */  
+
+         //get 3 number print large number 
+            //  var numOne = parseFloat(prompt("Enter 1st number:"));
+            //  var numTwo=parseFloat(prompt("Enter 2nd number:")) ;
+            //  var numThree=parseFloat(prompt("Enter 3rd number:")) ;
+
+            //  if(numOne>numTwo && numOne>numThree)
+            //  document.write('large number is'+numOne);
+            //  else if(numTwo>numOne && numTwo>numThree)
+            //  document.write('large number is'+numOne);
+            //  else
+            //  document.write('large number is'+numThree);
+
+         //vowel / consonant program
+            //  var char = prompt("Enter any character:");
+            //  char = char.toLowerCase();
+            //  if(char == "a" || char == "e" || char == "i" || char == "o" || char == "u")
+            //    document.write (char+" is vowel.");
+            //  else 
+            //    document.write(char+" is consonant.");
+
+
+         /**
+         * class 14
+         * Switch 
+         */  
+
+         //digit spaling
+            // var digit = prompt("Enter one digit:");
+            // switch(digit){
+            //     case '0':
+            //         document.write("zero");
+            //         break;
+            //     case '1':
+            //         document.write("one");
+            //         break;
+            //     case '2':
+            //         document.write("two");
+            //         break;
+            //     case '3':
+            //         document.write("three");
+            //         break;
+            //     case '4':
+            //         document.write("fore");
+            //         break;
+            //     case '5':
+            //         document.write("five");
+            //         break;
+            //     case '6':
+            //         document.write("six");
+            //         break;
+            //     case '7':
+            //         document.write("seven");
+            //         break;
+            //     case '8':
+            //         document.write("eight");
+            //         break;
+            //     case '9':
+            //         document.write("nine");
+            //         break;
+            //     default:
+            //         document.write ("invalid input!");
+            // }
+
+            //vowel  consonant using switch multicase
+
+            // var char = prompt("enter any charecter");
+            // char = char.toLowerCase();
+            // switch(char){
+            //     case 'a':
+            //     case 'e':
+            //     case 'i':    
+            //     case 'o':
+            //     case 'u':
+            //         document.write(char +" is vowel");
+            //         break;
+            //     default:
+            //         document.write (char + " is a consonant");
+            // }
+         
+         /**
+         * class 15 
+         * for loop (1)
+         */
+         //for loop example-1
+            // for(var x = 1; x<=10;x++)
+            // {
+            //     document.write(x+ " hello bangladesh<br\>");
+            // }
+
+         //for loop example-2------1 3 5 7 9 ......100
+            // for(var a=1;a<=100;a=a+2)
+            // {
+            //     document.write(a+" <br\>");
+            // }
+             
+         //for loop example-3------0 2 4 6 8 ......100
+            // for(x=0;x<=100;x=x+2){
+            //    document.write(x+" ");
+            // }
+
+         //for loop example-4 10 9 8 7 6 5 4...... 0
+            // for(var x=10; x>=0;x=x-1)
+            // {
+            //     document.write(x+" <br\>") ;
+            // } 
+
+         /**
+         * class 16
+         * for loop (2)
+         */  
+        
+         //for loop example -1
+            // var m = parseFloat(prompt("Enter First number:"));
+            // var n = parseFloat(prompt("Enter Last number:"));
+
+            // var sum = 0;
+
+            // for(var x = m; x<=n; x++)
+            // {
+            //    sum = sum + x;
+            // }
+            
+            // document.write("sum " +sum);
+
+         /**
+         * class 17
+         * while loop
+         * task -6 -> write a program that print sum of all the numbers that
+           are division by 3 and 5 from 1-100
+         */  
+
+        // 2+4+6+8+.....+100 
+            // var sum = 0;
+            // var x = 2;//initialization
+            // while( x<=100 ){
+            //     x = x+2;
+            //     sum = sum + x;
+            // }
+            // document.write("sum" + sum);
+
+        //take -6
+            // var startNumber = 1;
+            // var endNumber = 100;
+
+            // var x = startNumber;
+
+            // var sum = 0;
+            // while(x <= endNumber){
+            //    if(x%3 == 0 && x%5 == 0){
+            //       sum = sum+x;
+            //    }
+            //    x++;
+            // }
+            // document.write("sum"+ sum);
+
+
+
+    </script>
+</body>
+</html>

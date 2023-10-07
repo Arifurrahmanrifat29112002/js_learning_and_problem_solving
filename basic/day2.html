@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2 js</title>
+</head>
+<body>
+    <script>
+        //class 6
+        //get string length using length function
+        var text = "banglasesh";
+        document.write(text.length);//output 10
+
+        var myName = "Arifur Rahman Rifat";
+        document.write(myName.charAt(2));//output i
+       
+        var country = "bangladesh <br\>";
+        document.write(country.toUpperCase());//output BANGLADESH
+        document.write(country.toLowerCase());//output bangladesh
+
+        var city = "barishal"
+        document.write(city.slice(2,5));//output ris
+
+        var text1 = "hello ";
+        var text2 =  "world <br\>";
+
+        document.write(text1.concat(text2));//output hello world
+
+       /**
+        * class 6 assignment
+        */
+       
+       //get first name from user
+       var firstName = "Arifur Rahman";
+       //get last name from user
+       var lastName = " Rifat";
+
+       var fullName = firstName + lastName;
+       //print full name 
+       document.write("full name is "+ fullName +"<br\>");//output full name is  Arifur Rahman Rifat
+       //total length of full name
+       document.write("full name length " + fullName.length);//output full name length :19
+       //convert full name into uppercase 
+       document.write(fullName.toUpperCase());//output ARIFUR RAHMAN RIFAT
+
+       //print the 2nd position from full name
+       document.write("print the 2nd position from full name :" + fullName.charAt(2) +"<br/>");//print the 2nd position from full name :i
+
+       
+       //class -> 8 make your own calculator
+
+    //  var numOne = prompt('Enter first number:');
+    //  var numTwo = prompt('enter second number:');
+
+       var numOne = "20";
+       var numTwo = "10";
+
+       //numOne = Number(numOne);
+       //numTwo = Number(numTwo);
+       numOne = parseInt(numOne,10);
+       numTwo = parseInt(numTwo,10);
+
+
+       var Addition = numOne+numTwo;
+       document.write(numOne +"+"+numTwo +"="+ Addition +"<br/>");
+
+       var Subtraction = numOne-numTwo;
+       document.write(numOne +"-"+numTwo +"="+ Subtraction +"<br/>");
+    
+       var Multiplication = numOne*numTwo;
+       document.write(numOne +"*"+numTwo +"="+ Multiplication +"<br/>");  
+
+       var Division = numOne/numTwo;
+       document.write(numOne +"/"+numTwo +"="+ Division +"<br/>");
+
+       var Modulo = numOne%numTwo;
+       document.write(numOne +"%"+numTwo +"="+ Modulo +"<br/>");
+
+       //class -9 Area of various shapes
+
+
+       //square
+
+       var base = 10;
+       var height = 10;
+       var square = base * height;
+       document.write("square ="+square +"<br/>");//output square = 100
+
+
+       //Triangle
+
+       var triangle_base = 20;
+       var triangle_height = 10;
+       var triangle = (triangle_base * triangle_height) / 2;
+       document.write("Triangle "+triangle+"<br/>");//Triangle 100
+
+       //Trapezium
+
+       var a = 5;
+       var b = 8;
+       var height = 2;
+       var Trapezium = (a+b)*height/2;
+       document.write("Trapezium "+Trapezium+"<br/>");
+
+
+       //class-10 > how to make temperature convertor 
+       
+      //fahrenheit->celsius 
+      
+      var fahrenheit= parseFloat(prompt('Enter the Fahrenheit'));
+      var celsius = (fahrenheit-32)*(5/9);
+      document.write("celsius: "+celsius.toFixed(2)+"°C"+"<br/>");
+
+      //celsius -> fahrenheit
+      var celsius= parseFloat(prompt('Enter the celsius'));
+      var fahrenheit = (celsius*(9/5))+32;
+      document.write("fahrenheit: "+fahrenheit.toFixed(2)+"°F"+"<br/>");
+
+
+
+    </script>
+</body>
+</html>
