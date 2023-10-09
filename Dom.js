@@ -37,6 +37,7 @@
 
 /**
  * 34.Find, create, add, remove html elements
+ * 
  */
  //find a tag and edit
     // var link = document.getElementsByTagName('a')[0];
@@ -46,23 +47,60 @@
     // link.href="http//:www.arifurrahmanrifat.com";
 
 
-//create new html element 
-    var p = document.createElement("p");//create element
-    var text = document.createTextNode("assalamu alaikum");//add value 
-    p.appendChild(text);
+// //create new html element 
+//     var p = document.createElement("p");//create element
+//     var text = document.createTextNode("assalamu alaikum");//add value 
+//     p.appendChild(text);
 
-    var divId = document.getElementById('divId');//find div
-    divId.appendChild(p);
-//create new html element show upper section 
-   var  h1= document.createElement("h1");
-   var h1Text = document.createTextNode("welcome");
-   h1.appendChild(h1Text);
+//     var divId = document.getElementById('divId');//find div
+//     divId.appendChild(p);
+// //create new html element show upper section 
+//    var  h1= document.createElement("h1");
+//    var h1Text = document.createTextNode("welcome");
+//    h1.appendChild(h1Text);
 
 
-   var divId = document.getElementById("divId");//find div 
-   var firstChildElement = divId.firstChild;//get fist element
-   divId.insertBefore(h1,firstChildElement);
+//    var divId = document.getElementById("divId");//find div 
+//    var firstChildElement = divId.firstChild;//get fist element
+//    divId.insertBefore(h1,firstChildElement);
 
-//find html element then remove this element
-var firstChild = document.getElementsByTagName("h1")[1];
-divId.removeChild(firstChild); 
+// //find html element then remove this element
+// var firstChild = document.getElementsByTagName("h1")[1];
+// divId.removeChild(firstChild); 
+
+
+
+/**
+ * 35.Image slider mini project
+ */
+
+var ImageGallary = ["https://c4.wallpaperflare.com/wallpaper/968/1007/710/technology-programming-wallpaper-preview.jpg","https://c4.wallpaperflare.com/wallpaper/372/843/684/chip-connection-diagnosis-blur-wallpaper-preview.jpg","https://images.pexels.com/photos/52608/pexels-photo-52608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"];
+
+
+//find image tag
+var image = document.querySelector("img");
+//count 
+var count = 0;
+
+function Next(){
+  count++;
+  if(count >= ImageGallary.length){
+    count = 0;
+    image.src = ImageGallary[count];
+  }else{
+    image.src = ImageGallary[count];
+  }
+  
+}
+
+function Pre(){
+    count--;
+    if (count < 0) {
+        count = ImageGallary.length-1
+        image.src = ImageGallary[count];
+    }else{
+        image.src = ImageGallary[count];
+    }
+
+    
+}
