@@ -238,3 +238,131 @@
 //         selectButton.classList.remove("button_animation");
 //     },1000);
 // }
+
+/**
+ * 43.DOM Event | Event Object | onchange event
+ */
+
+
+
+//change event using input
+
+// var input = document.querySelector("input[name=name]");
+// input.addEventListener("change",function(e){
+//     console.log(e.target.name);//return target name
+//     console.log(e.target.value);//return target value
+// })
+
+
+//change event using checkbox 
+
+// var checkbox = document.querySelectorAll("input");
+// console.log(checkbox);//NodeList(2)0: input#vehicle11: input#vehicle2length: 2[[Prototype]]: NodeList
+// //right now NodeList to array convart 
+// Array.from(checkbox).map((box)=>{
+//     box.addEventListener('change',eventHandle);
+// })
+// function eventHandle(e) {
+//     if (e.target.checked) {
+//         console.log(`${e.target.value} is checked`);
+//     }else{
+//         console.log(`${e.target.value} is unchecked`)
+//     }
+// }
+
+//change event using selected 
+
+// var programs = document.querySelector("#program");
+// programs.addEventListener("change",function(e){
+//     console.log((e.target.value));
+// })
+
+
+/**
+ * 44.DOM Event | Event Object | onSubmit event
+ */
+// var form = document.querySelector("form");
+
+// var user_name = form.querySelector("div #name");
+// var user_email = form.querySelector("div #email");
+// var user_password = form.querySelector("div #password");
+
+// //add event 
+// form.addEventListener('submit',formHandeler);
+
+// function formHandeler(e){
+//     e.preventDefault();
+    
+//     //create object
+//     var userInfo = {
+//         name : user_name.value,
+//         email : user_email.value,
+//         password : user_password.value
+//     }
+//     console.table([userInfo]);
+//     //reset value after submit
+//     user_name.value="";
+//     user_email.value="";
+//     user_password.value="";
+// }
+
+
+
+
+/**
+ * 45.DOM Event | Event Object | media events
+ * 
+ * canPlay,Play,Playing,Pause,Progress,ended,volumeChange,waiting
+ */
+
+// var video = document.querySelector("video");
+
+// video.addEventListener('canplay',function(){
+//     console.log("can play");//can play
+// })
+
+// video.addEventListener('play',function(){
+//     console.log("video play");//video play
+// })
+
+// video.addEventListener('pause',function(){
+//     console.log("video pause");//video pause
+// })
+
+// video.addEventListener('valumeChange',function(){
+//     console.log("video valumeChange");//video valumeChange
+// })
+
+// video.addEventListener('ended',function(){
+//     console.log("video ended");//video ended
+// })
+
+
+
+/**
+ * 46.DOM Event | Event Object | load ,unload,scroll,resize,toggle
+ */
+
+    //load and unload
+
+    // window.addEventListener('load',function(){
+    //     console.log("page loaded");
+    // });
+
+    // window.addEventListener('unload',function(){
+    //     console.log("page unload");
+    // });
+
+    //scroll --firt   set body height 100vh
+
+    // window.addEventListener('scroll',function(){
+    //     console.log('page scroll');
+    // })
+
+    //resize
+    // window.addEventListener('resize',function(){
+    //     var width = window.innerWidth;
+    //     var height = window.innerHeight;
+
+    //     console.log(`height:${height}`,`width:${width}` );
+    // })
