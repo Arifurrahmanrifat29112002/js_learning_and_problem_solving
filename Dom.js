@@ -366,3 +366,144 @@
 
     //     console.log(`height:${height}`,`width:${width}` );
     // })
+
+/**
+ * 47.DOM Event | MouseEvent
+ */
+
+
+
+
+/**
+ * 51.DOM Event | DragEvent
+ * ondragstart
+ * ondrag
+ * ondragend
+ * ondragenter
+ * ondragleave
+ * ondragover
+ * ondrop
+ */
+
+//  var div = document.querySelector("#div");
+//  var p = document.querySelector("#p")
+
+//  p.addEventListener("dragstart",function(e){
+//     e.dataTransfer.setData("text",e.target.id);
+//  })
+
+//  div.addEventListener("dragover",function(e){
+//     e.preventDefault();
+//  })
+
+//  div.addEventListener("drop",function(e){
+//     var id = e.dataTransfer.getData("text");
+//     div.appendChild(document.getElementById(id));
+//     e.preventDefault();
+// }) 
+
+
+/**
+ * 52. Browser Object Model | location object
+ * windows
+ * location
+ */
+// console.clear();
+
+// console.log(location);
+//  var mainDiv = document.querySelector('.location-group');
+
+//  var p1 = mainDiv.children[0];
+//  p1.textContent = location.href;
+
+//  var p2 = mainDiv.children[1];
+//  p2.textContent = location.hostname;
+
+ 
+
+//  var button = document.querySelector("button");
+//  button.addEventListener('click',function(){
+//     location.assign("https://arifurrahmanrifat.com");
+//  })
+
+
+/**
+ * 53. Browser Object Model | Popup boxes
+ * alert,confirm,prompt
+ */
+
+
+/**
+ * 54.Browser Object Model | Timing events
+ * setTimeOut()
+ * setInteravl()
+ */
+
+//setTimeOut()
+
+// setTimeout(() =>{
+//     console.log("Hello from Timeout!");
+// },2000)
+
+
+// setTimeout(display,3000);
+
+// function display(){
+//     console.log("Hello world");
+// }
+
+//real time example ---setTimeOut()
+    // var button = document.querySelector("#button");
+    // var message = document.querySelector("#message");
+
+    // button.addEventListener("click",function(){
+
+    //     message.textContent = "user click save button";
+
+    //     setTimeout(display,2000)
+
+    //     function display() {
+    //         message.textContent = " ";
+    //     }
+    // })
+
+//real time example ---setInteravl()
+    // var button = document.querySelector("#button");
+    // var message = document.querySelector("#message");
+
+    // button.addEventListener("click",function(){
+    //     var count =1;
+    //     message.textContent = count;
+
+    //     setInterval(display,2000);
+    //     function display() {
+    //         count++;
+    //         message.textContent = count;
+    //     }
+    // })
+
+/**
+ * 55.Browser Object Model | Create a Clock
+ */
+   /**  var button = document.querySelector("#button");
+    var message = document.querySelector("#message");
+
+    button.addEventListener("click",displayTime);
+    function displayTime() {
+        var Time    = new Date();
+        var hours   = addZero(Time.getHours());
+        var minutes = addZero(Time.getMinutes());
+        var seconds = addZero(Time.getSeconds());
+
+        var timeFormate = hours + ":" + minutes + ":" + seconds;
+
+        message.textContent=timeFormate;
+        setInterval(displayTime,1000);
+    }
+
+    function addZero(i){
+        if (i<10) {
+            i = "0"+i;
+        }
+        return i;
+    }*/
