@@ -46,7 +46,185 @@
             //'use strict'
             // x=10;
             // console.log(x);//console error
+        
+        /**
+         *65.for of and for in loop
+        */
+        //for of
+            // const  names = ['Arif','Rifat','Bani']
+            // for(let name of names){
+            //     console.log(`Name is ${name}`);
+            // }
+        //for in
+            // let students = {
+            //     ID : 2,
+            //     Name : 'Arif',
+            //     Age : 24
+            // }
+            // for(let student in students){
+            //     console.log(`${student} : ${students[student]}`);
+            // }
 
+        /**
+         *66.forEach | for vs forEach
+        */
+        //for example
+            // var num = [20,10,30,5,]
+            // for(let x = 0; x<num.length; x++){
+            //         console.log(num[x]);
+            // }
+        //forEach
+            // var num = [5,10,20,30,40]
+            // num.forEach(function(x){
+            //     console.log(x);
+            // })
+
+        //forEach example
+            // var num = [5,10,20,30,40]
+            // console.log(num);
+            // num.forEach(function(x,index,arr){
+            //     arr[index] = x+5;
+            // })
+            // console.log(num);
+
+        /**
+         *67.map and filter array function
+        */
+        //forEach exmaole
+            // var num = [5,10,20,30];
+            // var squ = [];
+            // num.forEach((x)=>{
+            //     squ.push(x*x)
+            // })
+            // console.log(squ);
+
+        //^same exmaple using map
+            // var num = [5,10,20,30];
+            // var sqr = num.map((x)=>{
+            //     return x*x;
+            // })
+            // console.log(sqr);
+        
+        //filter
+            // var num = [5,10,20,30];
+            // var result = num.filter((x)=>{
+            //     return x>10;
+            // })
+            // console.log(result);
+
+        /**
+         *68.Arrow function part-1
+         *how to declare arrow function 
+         *Traditional function vs Arrow function
+         */
+        //Declare arrow function
+            // const display = () =>{
+            //     return " Hello World ";
+            // }
+            // console.log(display());
+
+
+        //Traditional function 
+            // function sum(a,b){
+            //     return a+b;
+            // }
+            // console.log(sum(10,20));
+        //Arrow function
+            // const sum = (a,b) => a+b;
+            // console.log(sum(10,20));
+        
+        /**
+         *69.Arrow function (part-2) | arrow with map,filter
+        */
+        // let students = [
+        //     {
+        //         ID : 1,
+        //         name: 'John',
+        //         age: 24,
+        //         cgpa :2.35
+        //     },
+        //     {
+        //         ID : 2,
+        //         name: 'Arif',
+        //         age: 27,
+        //         cgpa :2.65
+        //     },
+        //     {
+        //         ID : 3,
+        //         name: 'Rifat',
+        //         age: 24,
+        //         cgpa :3.79
+        //     },
+        //     {
+        //         ID : 4,
+        //         name: 'Jane',
+        //         age: 27,
+        //         cgpa :3.80
+        //     }
+        // ]
+
+        //Traditional function
+            // function display(){
+            //     return students.filter(function(x){
+            //        return x.cgpa >3;
+            //     }).map(function(y){
+            //         return y.name;
+            //     })
+            // }
+        // console.log(display());
+
+        //arrow function
+            // const studentsName = () => students.filter((x)=> x.cgpa>3.70 ).map((y) => y.name )
+            // console.log(studentsName());
+        
+        /**
+         *70.Destructuring array and objects
+         *Array Destructuring 
+         *object Destructuring
+         *nested Destructuring
+         *Destructuring function parameters
+        */
+
+        //Array Destructuring
+            // let students = ["Arif","Rifat","Bani"];
+            // console.log(`1st Student Name is ${students[0]}`);//before Array destructuring
+            // [firstStudent,secendStudent,thardStudent] = students;
+            // console.log(`1st Student Name is ${firstStudent}`);//After Array destructuring
+
+        //object Destructuring and nestesd Destructuring
+            // let student = {
+            //     fullName :"Arif",
+            //     language :{
+            //         php  : true ,
+            //         python : false ,
+            //         javascript :true
+            //     }
+            // }
+            // const {fullname,language} = student;
+            // console.log(`name is ${fullname} , js skill ${language.javascript}`);
+
+        //Destructuring function parameters
+            // const display =  ({name,age}) =>{
+            //     return `person name is ${name} and age ${age}`;
+            // }
+            // let person ={
+            //     name:"Arif",
+            //     age:21
+            // }
+            // console.log(display(person));
+
+        /**
+         *71. array methods | find() | findIndex()
+        */
+        //find()
+            // let num = [10,20,5,7];
+            // const firstEven = num.find(x=> x%2===0);
+            // console.log(firstEven);
+
+        //findIndex()
+            // let Numbers = [10,20,40,60];
+            // const indexOfNumbers = nums.findIndex(x=> x === 40 );
+            // console.log(indexOfNumbers);
     </script>
 </body>
 </html>
