@@ -87,7 +87,7 @@
 
 
 /**
- *  calling api from javascript | fetch api using await 
+ *  calling api from javascript | fetch api using   
  */
 
 const makeRequest = async () =>{
