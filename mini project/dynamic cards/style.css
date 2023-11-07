@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+.posts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-top: 5vh;
+}
+
+.posts .post{
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    margin-top: 2vh;
+    box-shadow: -4px 8px 39px -3px rgba(122,121,121,0.75);
+}
+
+
+/* responsiv */
+
+@media screen and (max-width: 992px){
+    .posts .post{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .posts .post{
+        width: 90%;
+    }
+    
+}
