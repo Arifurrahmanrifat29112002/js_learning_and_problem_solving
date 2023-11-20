@@ -1,0 +1,28 @@
+{
+    "students" :[
+        {
+            "name" : "Arifur Rahman Rifat",
+            "nickName" : null,
+            "roll" : 137028,
+            "depertment" : "cmt",
+            "inRegistration" : false,
+            "language" : ["bangla","english"],
+            "friends" : [
+                {"name":"Rahul"},
+                {"name":"Sakib"}
+            ]
+        },
+        {
+            "name" : "Arif khan",
+            "nickName" : null,
+            "roll" : 13702,
+            "depertment" : "cmt",
+            "inRegistration" : false,
+            "language" : ["bangla","english"],
+            "friends" : [
+                {"name":"Arifur Rahman Rifat"},
+                {"name":"Sakib"}
+            ]
+        }
+    ]
+}
